@@ -9,7 +9,11 @@ export default function Hero() {
                 <div className="intro-line">An Aspiring Front-End Developer, Passionate about contributing to the world of Web and Technology!</div>
                 <div className="profiles">
                     <button className="contact-btn1">Contact Me
-                        <div className="dot"></div>
+                        <div className="dot">
+                            <div className="arrow">	&#x2197;
+                                {/* <Image src="" alt="" height={8} width={8}></Image> */}
+                            </div>
+                        </div>
                     </button>
                     <Link href="#linkedin">
                         <div className="profile-btn">
@@ -24,6 +28,12 @@ export default function Hero() {
                 </div>
             </div>
             {/* <Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image> */}
+            <div className="img-card">
+                <div className="card-inner">
+                    <div className="card-front"><Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image></div>
+                    <div className="card-back"><Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image></div>
+                </div>
+            </div>
         </div>
     );
 }
