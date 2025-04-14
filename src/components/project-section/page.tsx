@@ -15,7 +15,7 @@ const projects = [
     },
     {
         title: "Task Manager",
-        description: "A full-stack task manager app with drag-and-drop UI.",
+        description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum odio beatae doloribus, sit sint, alias molestias omnis cupiditate necessitatibus molestiae nemo impedit voluptatibus quibusdam earum vitae consequatur aliquid quasi error.",
         year: "2022",
         role: "Developer"
     },

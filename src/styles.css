@@ -1,3 +1,5 @@
+/* @import "tailwindcss"; */
+
 :root {
   --white-color: #fff;
   --black-color: #0a0a0a;
@@ -29,10 +31,7 @@ body {
   color: var(--offwhite-color);
   font-size: 32px;
   font-family: "Bebas Neue";
-  font-weight: 400;
-  font-style: normal;
   letter-spacing: -0.32px;
-  line-height: 48px;
 }
 
 .links {
@@ -46,11 +45,11 @@ body {
 .links a {
   color: var(--offwhite-color);
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 500;
   line-height: 24px; /* 150% */
-  letter-spacing: -0.48px;
-  text-decoration: none;
+  /* letter-spacing: -0.48px;*/
+  text-decoration: none;  
   font-family: "Inter";
   transition: all 0.3s ease;
 }
@@ -68,17 +67,15 @@ body {
 }
 
 .desc-container {
-  height: 244px;
+  /* height: 244px; */
   width: 544px;
-  /* margin-top: 130px;
-    margin-left:100px; */
 }
 
 .intro {
   color: var(--white-color);
   font-size: 101px;
-  font-style: normal;
-  font-weight: 400;
+  /* font-style: normal;
+  font-weight: 400; */
   line-height: 91px;
   font-family: "Bebas Neue";
 }
@@ -86,9 +83,9 @@ body {
 .intro-line {
   color: var(--offwhite-color);
   font-size: 18px;
-  font-style: normal;
+  /* font-style: normal;
   font-weight: 400;
-  line-height: 27px;
+  line-height: 27px; */
   font-family: "Manrope";
 }
 
@@ -107,7 +104,7 @@ body {
 }
 
 .contact-btn1 {
-  gap: 12px;
+  gap: 16px;
   display: flex;
   padding: 20px 6px 20px 20px;
   justify-content: center;
@@ -117,7 +114,7 @@ body {
   background: var(--green-color);
   color: var(--black-color);
   font-size: 14px;
-  font-style: normal;
+  /* font-style: normal; */
   font-weight: 550;
   line-height: 100%;
   text-transform: uppercase;
@@ -167,7 +164,7 @@ body {
   border-radius: 50%;
   background: #222;
   width: 45px;
-  padding: 20px;
+  /* padding: 20px; */
   border: 1px solid black;
   transition: 1s ease;
   z-index: 3;
@@ -199,8 +196,8 @@ body {
 .project-header {
   color: var(--white-color);
   font-size: 76px;
-  font-style: normal;
-  font-weight: 400;
+  /* font-style: normal;
+  font-weight: 400; */
   line-height: 100%; /* 76px */
   font-family: "Bebas Neue";
 }
@@ -210,7 +207,7 @@ body {
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 150%; /* 27px */
+  line-height: 150%;
   font-family: "Manrope";
 }
 
@@ -223,11 +220,18 @@ gap: 120px;
 }
 
 .card-container {
-    display: flex;
-width: 1224px;
+    
+width: 100%;
+position: sticky;
+top: 15%;
+}
+
+.card{
+  display: flex;
 align-items: center;
 gap: 48px;
-width: 80vw;
+  position: relative;
+  width: 100%;
 }
 
 .img-section {
@@ -236,67 +240,54 @@ width: 600px;
 height: 500px;
 justify-content: center;
 align-items: center;
-flex-shrink: 0;
+/* flex-shrink: 0; */
 background: #1A1A1A;
 border-radius:12px;
 }
 
 .desc-section {
-  display: flex;
+  /* display: flex;
 flex-direction: column;
-align-items: flex-start;
-/* gap: 48px; */
+align-items: flex-start; */
 flex: 1 0 0; 
-padding: 60px 20px;
+/* padding: 60px 20px; */
 }
 
 .project-title {
-    color: var(--white-color);
-
-/* Heading/Three */
+    /* color: var(--white-color); */
 font-family: "Manrope";
 font-size: 32px;
-font-style: normal;
+/* font-style: normal;
 font-weight: 500;
-line-height: 140%; /* 44.8px */
+line-height: 140%;  */
 }
 
 .project-desc {
     color: var(--offwhite-color);
-
-/* Body/Medium */
 font-family: "Manrope";
 font-size: 18px;
-font-style: normal;
+padding: 3px 0px 10px 0px;
+/* font-style: normal;
 font-weight: 400;
-line-height: 150%; /* 27px */
+line-height: 150%;  */
 }
 
-.project-info {
-    display: flex;
-flex-direction: column;
-align-items: flex-start;
-gap: 16px;
-align-self: stretch;
-padding-top:10px
-}
-.project-info table{
-
-}
 .project-links{
   display: flex;
   gap:30px;
+  margin-top:30px;
 }
 
 .project-links a{
   color: var(--green-color);
-/* Misc/Link */
 font-family: "Manrope";
 font-size: 16px;
 font-style: normal;
 font-weight: 700;
-line-height: 150%; /* 24px */
+line-height: 150%;
 text-transform: uppercase;
+display: flex;
+gap:3px;
 }
 
 .img-card {
@@ -330,14 +321,20 @@ text-transform: uppercase;
   justify-content: center;
   border-radius: 0.5rem;
 }
-
-.card-front {
-  background: white;
-  border: 1px solid #e5e7eb;
+.card-back {
+  transform: rotateY(180deg);
 }
 
-.card-back {
-  background: #8b5cf6;
-  color: white;
-  transform: rotateY(180deg);
+
+.project-info{
+  width: -webkit-fill-available;;
+  display:flex;
+  border-bottom: 1px solid var(--white-color);
+  justify-content: space-between;
+font-family: "Manrope";
+font-size: 16px;
+line-height: 260%; 
+/* margin: 20px 2px; */
+align-items: center;
+
 }
