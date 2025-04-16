@@ -28,12 +28,12 @@ export default function Hero() {
                 </div>
             </div>
             {/* <Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image> */}
-            <div className="img-card">
+            {/* <div className="img-card">
                 <div className="card-inner">
                     <div className="card-front"><Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image></div>
                     <div className="card-back"><Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image></div>
                 </div>
-            </div>
+            </div> */}
         </div>
     );
 }

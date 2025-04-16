@@ -1,3 +1,4 @@
+
 import Image from "next/image"
 import Link from "next/link"
 
@@ -10,13 +11,13 @@ type CardProps = {
 
 const ProjectCard = ({ title, desc, year, role }: CardProps) => {
     return (
-        <div className="card-container">
-            <div className="card">
+        <div className="card" >
+            <div className="project-title">{title}</div>
+            <div className="card-content">
                 <div className="img-section">
                     <Image src="/work.png" alt="" height={345} width={480}></Image>
                 </div>
                 <div className="desc-section">
-                    <div className="project-title">{title}</div>
                     <div className="project-desc">{desc}</div>
                     <div className="project-info">PROJECT INFO</div>
                     <div className="project-info"><div>Year</div> <div>{year}</div></div>
@@ -27,8 +28,8 @@ const ProjectCard = ({ title, desc, year, role }: CardProps) => {
                     </div>
                 </div>
             </div>
-
         </div>
+
     )
 }
 

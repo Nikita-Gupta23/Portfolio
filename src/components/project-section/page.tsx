@@ -1,4 +1,11 @@
+"use client"
+
 import ProjectCard from "./card";
+import { useEffect, useRef } from 'react'
+import gsap from 'gsap'
+import ScrollTrigger from 'gsap/ScrollTrigger'
+
+gsap.registerPlugin(ScrollTrigger)
 
 const projects = [
     {
@@ -22,13 +29,43 @@ const projects = [
 ];
 
 export default function Project() {
+    const sectionRef = useRef<HTMLDivElement>(null)
+
+    useEffect(() => {
+        const ctx = gsap.context(() => {
+            const tl = gsap.timeline({
+                scrollTrigger: {
+                    trigger: sectionRef.current,
+                    pin: true,
+                    start: 'top top',
+                    end: 'bottom top',
+                    scrub: 1,
+                }
+            })
+
+            tl.to('.card .card-content', {
+                height: 0,
+                paddingBottom: 0,
+                opacity: 0,
+                stagger: 0.5
+            })
+
+            tl.to('.card', {
+                marginBottom: -15,
+                stagger: 0.5
+            }, '<')
+        }, sectionRef)
+
+        return () => ctx.revert()
+    }, [])
+
     return (
         <div className="project-container">
             <div className="project-header-box ">
                 <div className="project-header">Featured Projects</div>
                 <div className="project-desc">Here are some of the selected projects that showcase my passion for front-end development.</div>
             </div>
-            <div className="project-card-container">
+            <div className="project-card-container" ref={sectionRef}>
                 {projects.map((project, index) => (
                     <ProjectCard
                         key={index}

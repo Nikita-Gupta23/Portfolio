@@ -215,22 +215,20 @@ body {
     display: flex;
 flex-direction: column;
 align-items: flex-start;
-gap: 120px;
+/* gap: 120px; */
 
 }
 
-.card-container {
-    
+.card {
+    display: flex;
+    flex-direction: column;
 width: 100%;
-position: sticky;
-top: 15%;
 }
 
-.card{
+.card-content{
   display: flex;
 align-items: center;
 gap: 48px;
-  position: relative;
   width: 100%;
 }
 
@@ -256,10 +254,13 @@ flex: 1 0 0;
 .project-title {
     /* color: var(--white-color); */
 font-family: "Manrope";
-font-size: 32px;
+font-size: 35px;
+/* /margin-bottom: 10px; */
 /* font-style: normal;
 font-weight: 500;
 line-height: 140%;  */
+padding-bottom: .4em;
+
 }
 
 .project-desc {

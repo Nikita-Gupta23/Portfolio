@@ -10,6 +10,8 @@ export default function Home() {
       <Hero />
       <div className="dividing-line"></div>
       <Project />
+      <div className="dividing-line"></div>
+
     </>
   );
 }
