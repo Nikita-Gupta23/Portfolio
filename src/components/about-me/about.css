@@ -1,0 +1,54 @@
+.about-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    
+    margin:100px 80px;
+    gap:200px;
+}
+
+.about-title{
+    color: var(--white-color);
+    font-family: "Bebas Neue";
+    font-size: 85px;
+    line-height: 90%; 
+    width: 100%;
+}
+
+.about-box{
+    display: flex;
+    flex-direction: column;
+    gap:12px;
+
+}
+
+.about-header{
+    color: var(--white-color);
+font-family: "Manrope";
+font-size: 28px;
+font-style: normal;
+font-weight: 500;
+line-height: 140%; /* 44.8px */
+
+}
+
+.about-text{
+    color: var(--offwhite-color);
+font-family: "Manrope";
+font-size: 18px;
+font-style: normal;
+font-weight: 400;
+line-height: 150%; /* 27px */
+
+}
+
+.about-container a{
+    color: var(--green-color);
+font-family: "Manrope";
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 150%; /* 24px */
+text-transform: uppercase;
+margin-top: 40px;
+}

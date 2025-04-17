@@ -1,0 +1,130 @@
+.project-container {
+    margin-inline: 100px;
+    display: inline-flex;
+    padding: 60px 0px 0px 0px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 80px;
+    /* width: 60vw; */
+  }
+  
+  .project-header-box {
+    display: flex;
+    width: 600px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+  
+  .project-header {
+    color: var(--white-color);
+    font-size: 76px;
+    /* font-style: normal;
+    font-weight: 400; */
+    line-height: 100%; /* 76px */
+    font-family: "Bebas Neue";
+  }
+  
+  .project-desc {
+    color: var(--offwhite-color);
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 150%;
+    font-family: "Manrope";
+  }
+  
+  .project-card-container {
+      display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* gap: 120px; */
+  }
+  
+  .card {
+      display: flex;
+      flex-direction: column;
+  background-color: #222;
+  border: 1px solid black;
+  border-radius: 20px;
+  padding: 20px 30px 10px 30px;
+  }
+  
+  .project-title {
+    /* color: var(--white-color); */
+font-family: "Manrope";
+font-size: 35px;
+/* /margin-bottom: 10px; */
+/* font-style: normal;
+font-weight: 500;
+line-height: 140%;  */
+padding-bottom: .4em;
+}
+
+  .card-content{
+    display: flex;
+  align-items: center;
+  gap: 48px;
+    width: 100%;
+  }
+  
+  .img-section {
+      display: flex;
+  width: 600px;
+  height: 500px;
+  justify-content: center;
+  align-items: center;
+  /* flex-shrink: 0; */
+  background: #1A1A1A;
+  border-radius:12px;
+  }
+  
+  .desc-section {
+    /* display: flex;
+  flex-direction: column;
+  align-items: flex-start; */
+  flex: 1 0 0; 
+  /* padding: 60px 20px; */
+  }
+   
+  .project-desc {
+      color: var(--offwhite-color);
+  font-family: "Manrope";
+  font-size: 18px;
+  padding: 3px 0px 10px 0px;
+  /* font-style: normal;
+  font-weight: 400;
+  line-height: 150%;  */
+  }
+
+  .project-info{
+    width: -webkit-fill-available;;
+    display:flex;
+    border-bottom: 1px solid var(--white-color);
+    justify-content: space-between;
+  font-family: "Manrope";
+  font-size: 16px;
+  line-height: 260%; 
+  /* margin: 20px 2px; */
+  align-items: center;
+  }
+  
+  .project-links{
+    display: flex;
+    gap:30px;
+    margin-top:30px;
+  }
+  
+  .project-links a{
+    color: var(--green-color);
+  font-family: "Manrope";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  display: flex;
+  gap:3px;
+  }
+    
+  

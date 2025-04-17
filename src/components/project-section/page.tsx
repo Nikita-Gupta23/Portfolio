@@ -33,6 +33,7 @@ export default function Project() {
 
     useEffect(() => {
         const ctx = gsap.context(() => {
+            const cards = gsap.utils.toArray('.card') as HTMLElement[]
             const tl = gsap.timeline({
                 scrollTrigger: {
                     trigger: sectionRef.current,
@@ -42,18 +43,22 @@ export default function Project() {
                     scrub: 1,
                 }
             })
+            cards.slice(0, -1).forEach((card, i) => {
+                const content = card.querySelector('.card-content')
+                if (!content) return
 
-            tl.to('.card .card-content', {
-                height: 0,
-                paddingBottom: 0,
-                opacity: 0,
-                stagger: 0.5
+                tl.to(content, {
+                    height: 0,
+                    paddingBottom: 0,
+                    opacity: 0,
+                    stagger: 0.5
+                }, i)
+
+                tl.to(card, {
+                    marginBottom: -15,
+                    stagger: 0.5
+                }, i)
             })
-
-            tl.to('.card', {
-                marginBottom: -15,
-                stagger: 0.5
-            }, '<')
         }, sectionRef)
 
         return () => ctx.revert()
