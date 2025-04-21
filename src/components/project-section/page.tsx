@@ -63,7 +63,7 @@ export default function Project() {
 
         return () => ctx.revert()
     }, [])
-
+    // ScrollTrigger.refresh();
     return (
         <div className="project-container">
             <div className="project-header-box ">

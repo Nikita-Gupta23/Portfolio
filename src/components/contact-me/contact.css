@@ -1,0 +1,62 @@
+.contact-container{
+    display: flex;
+    padding: 100px;
+    gap: 200px;
+}
+
+.section{
+    display: flex;
+flex-direction: column;
+width: 600px;
+height: auto;
+}
+
+.connect{
+    color: var(--white-color);
+font-family: "Bebas Neue";
+font-size: 76px;
+line-height: 100%; /* 76px */
+margin-bottom: 16px;
+}
+
+.text{
+    color: var(--offwhite-color);
+font-family: "Manrope";
+font-size: 18px;
+line-height: 150%; /* 27px */
+margin:5px 0px;
+}
+
+.text a{
+    color: var(--white-color);
+    text-decoration-color: var(--green-color);
+    text-decoration-thickness: 2px;
+    text-underline-offset: 5px;
+}
+
+.left-section .links{
+    display: flex;
+    gap:25px;
+    align-items: center;
+    margin-top:30px;
+}
+
+.copyright{
+    color: var(--offwhite-color);
+font-family: "Manrope";
+font-size: 16px;
+font-weight: 500;
+line-height: 160%;
+margin-top:250px;
+}
+
+.form input{
+    display: flex;
+padding: 12px 16px;
+align-items: flex-start;
+border:1px solid black;
+border-radius: 4px;
+background: #1A1A1A;
+margin: 5px 0px 20px 0px;
+width: 100%;
+}
