@@ -1,0 +1,45 @@
+.scroll-indicator {
+    position: fixed;
+   right: 30px;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    z-index: 50;
+  }
+  
+  .labels {
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+    color: #ccc;
+    font-family: monospace;
+    font-size: 14px;
+  }
+  
+  .line-wrapper {
+    position: relative;
+    width: 2px;
+    height: 300px;
+    background: transparent;
+  }
+  
+  .track-line {
+    position: absolute;
+    width: 2px;
+    height: 100%;
+    background-color: #666;
+    left: 0;
+  }
+  
+  .scroll-thumb {
+    position: absolute;
+    width: 6px;
+    height: 20px;
+    border-radius: 3px;
+    background-color: white;
+    left: -2px;
+    top: 0;
+  }
+  

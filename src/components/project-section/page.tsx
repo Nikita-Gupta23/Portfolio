@@ -4,6 +4,7 @@ import ProjectCard from "./card";
 import { useEffect, useRef } from 'react'
 import gsap from 'gsap'
 import ScrollTrigger from 'gsap/ScrollTrigger'
+import HoverEffect from "../hoverEffect/HoverEffect";
 
 gsap.registerPlugin(ScrollTrigger)
 
@@ -65,9 +66,9 @@ export default function Project() {
     }, [])
     // ScrollTrigger.refresh();
     return (
-        <div className="project-container">
+        <div className="project-container" id="work">
             <div className="project-header-box ">
-                <div className="project-header">Featured Projects</div>
+                <div className="project-header"><HoverEffect text="Featured Projects"></HoverEffect></div>
                 <div className="project-desc">Here are some of the selected projects that showcase my passion for front-end development.</div>
             </div>
             <div className="project-card-container" ref={sectionRef}>

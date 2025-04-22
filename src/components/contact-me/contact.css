@@ -1,7 +1,7 @@
 .contact-container{
     display: flex;
-    padding: 100px;
-    gap: 200px;
+    padding: 80px 120px;
+    gap: 150px;
 }
 
 .section{

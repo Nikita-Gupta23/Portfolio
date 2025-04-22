@@ -1,0 +1,19 @@
+
+  .letter {
+    display: inline-block;
+    transition: transform 0.3s ease;
+    cursor: pointer;
+  }
+  
+  .letter:hover {
+    animation: bounce 0.4s ease;
+    color: var(--green-color)
+  }
+  
+  @keyframes bounce {
+    0%   { transform: translateY(0); }
+    30%  { transform: translateY(-8px); }
+    60%  { transform: translateY(4px); }
+    100% { transform: translateY(0); }
+  }
+  

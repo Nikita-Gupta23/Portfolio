@@ -1,11 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
+import HoverEffect from "../hoverEffect/HoverEffect";
 
 export default function Hero() {
     return (
         <div className="hero-container">
             <div className="desc-container">
-                <div className="intro">Hi, I am <br></br> Nikita Gupta</div>
+                <div className="intro"><HoverEffect text="Hi, I am"></HoverEffect> <br></br><HoverEffect text="Nikita Gupta"></HoverEffect></div>
                 <div className="intro-line">An Aspiring Front-End Developer, Passionate about contributing to the world of Web and Technology!</div>
                 <div className="profiles">
                     <button className="contact-btn1">Contact Me

@@ -6,8 +6,8 @@ export default function Header() {
             <Link href="" className="logo-name">Nikita Gupta</Link>
             <div className="links">
                 <Link href="#work">Work</Link>
-                <Link href="#About">About</Link>
-                <Link href="#Contact">Contact</Link>
+                <Link href="#about">About</Link>
+                <Link href="#contact">Contact</Link>
             </div>
         </div>
     )

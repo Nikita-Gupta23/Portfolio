@@ -15,16 +15,27 @@
     font-size: 101px;
     /* font-style: normal;
     font-weight: 400; */
-    line-height: 91px;
+    line-height: 45px;
     font-family: "Bebas Neue";
+    letter-spacing: 1.5px;
   }
-  
+  /* .intro span{
+    display: inline-block;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .intro span:hover{
+    color: #f4a949;
+  transform: translateY(-4px);
+  } */
+
   .intro-line {
     color: var(--offwhite-color);
     font-size: 18px;
     /* font-style: normal;
     font-weight: 400;
     line-height: 27px; */
+    margin-top:40px;
     font-family: "Manrope";
   }
   
