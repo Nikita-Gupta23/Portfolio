@@ -4,7 +4,7 @@ import HoverEffect from "../hoverEffect/HoverEffect";
 
 export default function Hero() {
     return (
-        <div className="hero-container">
+        <section id="01" className="hero-container">
             <div className="desc-container">
                 <div className="intro"><HoverEffect text="Hi, I am"></HoverEffect> <br></br><HoverEffect text="Nikita Gupta"></HoverEffect></div>
                 <div className="intro-line">An Aspiring Front-End Developer, Passionate about contributing to the world of Web and Technology!</div>
@@ -35,6 +35,6 @@ export default function Hero() {
                     <div className="card-back"><Image src="/nik.png" alt="Hi! Its me" width={300} height={300}></Image></div>
                 </div>
             </div> */}
-        </div>
+        </section>
     );
 }

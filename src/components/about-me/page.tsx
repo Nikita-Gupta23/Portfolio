@@ -5,7 +5,7 @@ import HoverEffect from "../hoverEffect/HoverEffect";
 export default function About() {
     return (
         <>
-            <div className="about-container" id="about">
+            <section className="about-container" id="03">
                 <div className="about-title"><HoverEffect text="ABOUT ME"></HoverEffect></div>
                 <div className="about-box">
                     <div className="about-header">I am a front-end developer based in Sydney. <br></br>Has Mechanical Engineering background. </div>
@@ -16,7 +16,7 @@ export default function About() {
 
                 </div>
 
-            </div>
+            </section>
 
         </>
     );

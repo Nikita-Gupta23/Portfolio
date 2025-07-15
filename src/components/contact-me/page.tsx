@@ -6,7 +6,7 @@ import HoverEffect from "../hoverEffect/HoverEffect";
 
 export default function Contact() {
     return (
-        <div className="contact-container" id="contact">
+        <section className="contact-container" id="04">
             <div className="left section">
                 <div className="connect"><HoverEffect text="Let's Connect"></HoverEffect></div>
                 <div className="text">Say hello at    <Link href="#mail">nik23.gupta@gmail.com</Link></div>
@@ -35,6 +35,6 @@ export default function Contact() {
                     </Form>
                 </div>
             </div>
-        </div>
+        </section>
     )
 }

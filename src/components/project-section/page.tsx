@@ -66,7 +66,7 @@ export default function Project() {
     }, [])
     // ScrollTrigger.refresh();
     return (
-        <div className="project-container" id="work">
+        <section id="02" className="project-container">
             <div className="project-header-box ">
                 <div className="project-header"><HoverEffect text="Featured Projects"></HoverEffect></div>
                 <div className="project-desc">Here are some of the selected projects that showcase my passion for front-end development.</div>
@@ -82,6 +82,6 @@ export default function Project() {
                     </ProjectCard>
                 ))}
             </div>
-        </div>
+        </section>
     );
 }

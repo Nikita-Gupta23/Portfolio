@@ -1,6 +1,6 @@
-.scroll-indicator {
+  .scroll-indicator {
     position: fixed;
-   right: 30px;
+    right: 30px;
     top: 50%;
     transform: translateY(-50%);
     display: flex;
@@ -16,6 +16,8 @@
     color: #ccc;
     font-family: monospace;
     font-size: 14px;
+     cursor: pointer;
+  transition: color 0.3s ease;
   }
   
   .line-wrapper {
@@ -31,6 +33,7 @@
     height: 100%;
     background-color: #666;
     left: 0;
+    border-radius: 2px;
   }
   
   .scroll-thumb {
@@ -40,6 +43,13 @@
     border-radius: 3px;
     background-color: white;
     left: -2px;
-    top: 0;
+    top: 10px;
+    cursor: grab;
+    user-select: none;
+    touch-action: none;
   }
-  
+
+.labels span.active {
+  color: white;
+  font-size: 16px;
+}
