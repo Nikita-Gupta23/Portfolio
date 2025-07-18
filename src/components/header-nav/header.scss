@@ -1,11 +1,11 @@
 .header-container {
-    display: flex;
-    width: 100%;
-    padding: 24px 10px 24px 50px;
-    justify-content: space-between;
-    align-items: center;
-  }
-  
+  display: flex;
+  width: 100%;
+  padding: 24px 10px 24px 50px;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+
   .logo-name {
     color: var(--offwhite-color);
     font-size: 32px;
@@ -13,24 +13,57 @@
     letter-spacing: -0.32px;
     text-decoration: none;
   }
-  
+
   .links {
-    width: 270px;
     display: flex;
-    justify-content: flex-start;
     gap: 30px;
     align-items: center;
+
+    a {
+      color: var(--offwhite-color);
+      font-size: 18px;
+      text-decoration: none;
+      font-family: "Inter";
+      transition: all 0.3s ease;
+      padding-right: 5px;
+
+      &:hover {
+        transform: scale(1.5);
+        text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+      }
+    }
   }
-  
-  .links a {
+
+  .hamburger {
+    display: none;
+    cursor: pointer;
     color: var(--offwhite-color);
-    font-size: 18px;
-    text-decoration: none;  
-    font-family: "Inter";
-    transition: all 0.3s ease;
   }
-  
-  .links a:hover {
-    transform: scale(1.5);
-    text-shadow: 0 0 20px rgba(0, 255, 255, 0.5);
+
+  // ✅ Mobile styles
+  @media (max-width: 768px) {
+    padding: 16px 20px;
+
+    .links {
+      position: absolute;
+      top: 100%;
+      left: 0;
+      width: 100%;
+      background-color: #111;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 20px;
+      gap: 20px;
+      display: none;
+      z-index: 10;
+
+      &.open {
+        display: flex;
+      }
+    }
+
+    .hamburger {
+      display: block;
+    }
   }
+}

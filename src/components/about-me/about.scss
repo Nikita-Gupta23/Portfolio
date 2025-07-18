@@ -1,54 +1,85 @@
-.about-container{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    
-    margin:100px 80px;
-    gap:200px;
-}
+.about-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 100px 80px;
+  gap: 200px;
 
-.about-title{
+  @media (max-width: 1024px) {
+    margin: 80px 40px;
+    gap: 100px;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    gap: 40px;
+    margin: 60px 20px;
+  }
+
+  .about-title {
     color: var(--white-color);
-    font-family: "Bebas Neue";
+    font-family: "Bebas Neue", sans-serif;
     font-size: 85px;
-    line-height: 90%; 
+    line-height: 90%;
     width: 100%;
-}
+     word-spacing: normal;
+  letter-spacing: normal;
+  flex: 1; /* take up appropriate space */
+  min-width: 300px;
 
-.about-box{
+    @media (max-width: 768px) {
+      font-size: 55px;
+      text-align: center;
+    }
+  }
+
+  .about-box {
     display: flex;
     flex-direction: column;
-    gap:12px;
+    gap: 12px;
+    max-width: 700px;
 
-}
+    @media (max-width: 768px) {
+      align-items: center;
+      text-align: center;
+    }
+  }
 
-.about-header{
+  .about-header {
     color: var(--white-color);
-font-family: "Manrope";
-font-size: 28px;
-font-style: normal;
-font-weight: 500;
-line-height: 140%; /* 44.8px */
+    font-family: "Manrope";
+    font-size: 25px;
+    font-weight: 550;
+    line-height: 140%;
 
-}
+    @media (max-width: 768px) {
+      font-size: 22px;
+    }
+  }
 
-.about-text{
+  .about-text {
     color: var(--offwhite-color);
-font-family: "Manrope";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: 150%; /* 27px */
+    font-family: "Manrope";
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 150%;
 
-}
+    @media (max-width: 768px) {
+      font-size: 16px;
+    }
+  }
 
-.about-container a{
-    color: var(--green-color);
-font-family: "Manrope";
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-line-height: 150%; /* 24px */
-text-transform: uppercase;
-margin-top: 40px;
+//   a {
+//     color: var(--green-color);
+//     font-family: "Manrope";
+//     font-size: 16px;
+//     font-weight: 700;
+//     line-height: 150%;
+//     text-transform: uppercase;
+//     margin-top: 40px;
+
+//     @media (max-width: 768px) {
+//       font-size: 14px;
+//     }
+//   }
 }

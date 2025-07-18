@@ -27,7 +27,7 @@ export default function Hero() {
                     </Link>
 
                     <Link
-                        href="https://www.linkedin.com/in/nikitagupta..."
+                        href="https://www.linkedin.com/in/nik23gupta"
                         target="_blank"
                         rel="noopener noreferrer"
                     >
@@ -37,7 +37,7 @@ export default function Hero() {
                     </Link>
 
                     <Link
-                        href="https://github.com/nikitagupta..."
+                        href="https://github.com/Nikita-Gupta23"
                         target="_blank"
                         rel="noopener noreferrer"
                     >

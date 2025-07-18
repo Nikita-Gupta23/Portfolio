@@ -1,14 +1,24 @@
+"use client";
 import Link from "next/link";
+import { useState } from "react";
+import { HiOutlineMenu, HiOutlineX } from "react-icons/hi";
 
 export default function Header() {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     return (
-        <section id="00" className="header-container">
-            <Link href="" className="logo-name">Nikita Gupta</Link>
-            <div className="links">
-                <Link href="#02">Work</Link>
-                <Link href="#03">About</Link>
-                <Link href="#04">Contact</Link>
+        <header id="00" className="header-container">
+            <Link href="/" className="logo-name">Nikita Gupta</Link>
+
+            <div className={`links ${menuOpen ? "open" : ""}`}>
+                <Link href="#02" onClick={() => setMenuOpen(false)}>Work</Link>
+                <Link href="#03" onClick={() => setMenuOpen(false)}>About</Link>
+                <Link href="#04" onClick={() => setMenuOpen(false)}>Contact</Link>
             </div>
-        </section>
-    )
+
+            <div className="hamburger" onClick={() => setMenuOpen(!menuOpen)}>
+                {menuOpen ? <HiOutlineX size={30} /> : <HiOutlineMenu size={30} />}
+            </div>
+        </header>
+    );
 }
