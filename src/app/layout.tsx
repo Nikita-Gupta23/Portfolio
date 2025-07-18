@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "../styles.css"
+import "../styles.scss"
 import { Bebas_Neue, Manrope } from "next/font/google";
 
 const bebasNeue = Bebas_Neue({

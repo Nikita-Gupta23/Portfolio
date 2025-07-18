@@ -1,41 +1,27 @@
-.hero-container {
+ /* Main Container */
+ .hero-container {
     justify-content: space-evenly;
     padding: 100px;
     height: 80vh;
     display: flex;
-  }
+  flex-wrap: wrap;
   
+  /* Description Section */
   .desc-container {
-    /* height: 244px; */
     width: 544px;
-  }
   
   .intro {
     color: var(--white-color);
-    font-size: 101px;
-    /* font-style: normal;
-    font-weight: 400; */
+    font-size: clamp(36px, 8vw, 90px);
     line-height: 45px;
     font-family: "Bebas Neue";
     letter-spacing: 1.5px;
   }
-  /* .intro span{
-    display: inline-block;
-    transition: all 0.3s ease-in-out;
-  }
-
-  .intro span:hover{
-    color: #f4a949;
-  transform: translateY(-4px);
-  } */
 
   .intro-line {
     color: var(--offwhite-color);
     font-size: 18px;
-    /* font-style: normal;
-    font-weight: 400;
-    line-height: 27px; */
-    margin-top:40px;
+    margin-top: 40px;
     font-family: "Manrope";
   }
   
@@ -44,7 +30,11 @@
     align-items: center;
     gap: 30px;
     margin-top: 30px;
-  }
+    flex-wrap: wrap;
+
+   a{
+      text-decoration: none;
+    }
   
   .contact-btn1 {
     gap: 16px;
@@ -57,11 +47,11 @@
     background: var(--green-color);
     color: var(--black-color);
     font-size: 14px;
-    /* font-style: normal; */
     font-weight: 550;
     line-height: 100%;
     text-transform: uppercase;
     height: 54px;
+    transition: 0.3s ease;
   }
   
   .dot {
@@ -92,7 +82,7 @@
   .contact-btn1:hover .dot {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    // border-radius: 50%;
   }
   
   .contact-btn1:hover .arrow {
@@ -117,14 +107,17 @@
     transform: scale(1.2) rotateY(360deg);
     box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
   }
+}
+  }
 
+  /* Image Section */
   .img-card {
     width: 200px;
     height: 250px;
     margin: 1rem auto;
     perspective: 1000px;
     cursor: pointer;
-  }
+  
   
   .card-inner {
     position: relative;
@@ -149,7 +142,13 @@
     justify-content: center;
     border-radius: 0.5rem;
   }
+
+  .card-front img{
+    border-radius: 165px;
+  }
+
   .card-back {
     transform: rotateY(180deg);
   }
-  
+}
+}

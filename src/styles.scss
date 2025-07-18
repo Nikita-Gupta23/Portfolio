@@ -1,9 +1,9 @@
 /* @import "tailwindcss"; */
-@import url('./components/about-me/about.css');
-@import url('./components/contact-me/contact.css');
-@import url('./components/header-nav/header.css');
-@import url('./components/her-section/hero.css');
-@import url('./components/project-section/project.css');
+@import './components/about-me/about.scss';
+@import'./components/contact-me/contact.scss';
+@import './components/header-nav/header.scss';
+@import './components/her-section/hero.scss';
+@import './components/project-section/project.scss';
 
 :root {
   --white-color: #fff;

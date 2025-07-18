@@ -1,5 +1,5 @@
 
-import './HoverEffect.css';
+import './HoverEffect.scss';
 
 type Props = {
     text: string;
