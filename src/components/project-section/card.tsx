@@ -1,5 +1,4 @@
 
-import { div } from "framer-motion/client";
 import Image from "next/image"
 import Link from "next/link"
 
@@ -15,7 +14,7 @@ type CardProps = {
     backendRepo?: string | "";
 }
 
-const ProjectCard = ({ img, title, desc, year, role, link, repo, frontendRepo, backendRepo }: CardProps) => {
+const ProjectCard = ({ img, title, desc, link, repo, frontendRepo, backendRepo }: CardProps) => {
     return (
         <div className="card" >
             <div className="project-title">{title}</div>

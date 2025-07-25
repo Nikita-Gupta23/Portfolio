@@ -56,7 +56,7 @@ const Scroller = () => {
       thumb.style.cursor = "grabbing";
     };
 
-    const onPointerMove = (e: any) => {
+    const onPointerMove = (e: React.MouseEvent<HTMLDivElement>) => {
       if (!isDragging) return;
       const dy = e.clientY - startY;
       const newY = Math.min(
