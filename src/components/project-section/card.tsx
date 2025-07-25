@@ -28,11 +28,10 @@ const ProjectCard = ({ img, title, desc, link, repo, frontendRepo, backendRepo }
                     <div className="project-info"><div>Year</div> <div>{year}</div></div>
                     <div className="project-info"><div>Role</div> <div>{role}</div></div> */}
                     <div className="project-links">
-                        {link && link !== "(in progress)" ? <Link href={link} target="_blank">View Project <Image src="/arrow.png" alt="" height={24} width={24}></Image></Link> : <div>In Progress</div>
-                        }
+                        {link && (link !== "(in progress)" ? <Link href={link} target="_blank">View Project <Image src="/arrow.png" alt="" height={24} width={24}></Image></Link> : <div>In Progress</div>)}
                         {repo && <Link href={repo} target="_blank">Github <Image src="/github.png" alt="" height={22} width={22}></Image></Link>}
-                        {frontendRepo && frontendRepo !== "(in progress)" ? <Link href={frontendRepo} target="_blank">Frontend Repo <Image src="/github.png" alt="" height={22} width={22}></Image></Link> : <div>In Progress</div>}
-                        {backendRepo && backendRepo !== "(in progress)" ? <Link href={backendRepo} target="_blank">Backend Repo <Image src="/github.png" alt="" height={22} width={22}></Image></Link> : <div>In Progress</div>}
+                        {frontendRepo && (frontendRepo !== "(in progress)" ? <Link href={frontendRepo} target="_blank">Frontend Repo <Image src="/github.png" alt="" height={22} width={22}></Image></Link> : <div>In Progress</div>)}
+                        {backendRepo && (backendRepo !== "(in progress)" ? <Link href={backendRepo} target="_blank">Backend Repo <Image src="/github.png" alt="" height={22} width={22}></Image></Link> : <div>In Progress</div>)}
                     </div>
                 </div>
             </div>
