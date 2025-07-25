@@ -1,6 +1,5 @@
 .contact-container {
   display: flex;
-//   flex-wrap: wrap;
   justify-content: space-between;
   padding: 80px 120px;
   gap: 100px;
@@ -24,10 +23,18 @@
 
 .connect {
   color: var(--white-color);
-  font-family: "Bebas Neue";
-  font-size: 76px;
-  line-height: 100%;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 70px;
+  line-height: 90%;
+  width: 100%;
   margin-bottom: 16px;
+  word-spacing: normal;
+  letter-spacing: normal;
+  min-width: 318px;
+
+   @media (max-width: 600px) {
+    font-size: 52px;
+  }
 }
 
 .text {
@@ -69,6 +76,13 @@
     font-family: "Manrope";
     color: white;
   }
+  input,
+textarea {
+  &:focus {
+    outline: 2px solid var(--green-color);
+    outline-offset: 2px;
+  }
+}
 
   button {
     padding: 12px 24px;
@@ -78,6 +92,26 @@
     font-weight: bold;
     border-radius: 4px;
     cursor: pointer;
+     transition: background-color 0.3s ease;
+
+  &:hover {
+    background-color: lighten(#d3e97a, 10%);
+  }
+
+  &:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+  }
+
+
+  }
+}
+
+.profile-btn {
+  transition: transform 0.2s ease;
+
+  &:hover {
+    transform: scale(1.1);
   }
 }
 

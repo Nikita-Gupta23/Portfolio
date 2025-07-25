@@ -128,4 +128,75 @@ padding-bottom: .4em;
   gap:3px;
   }
     
-  
+  @media (max-width: 1024px) {
+  .project-container {
+    margin-inline: 40px;
+    gap: 60px;
+    padding-top: 40px;
+  }
+
+  .project-header {
+    font-size: 56px;
+  }
+
+  .project-header-box {
+    width: 100%;
+  }
+
+  .project-desc {
+    font-size: 16px;
+  }
+
+  .card-content {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .img-section {
+    width: 100%;
+    height: auto;
+  }
+
+  .img-section img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .desc-section {
+    width: 100%;
+  }
+
+  .project-title {
+    font-size: 28px;
+  }
+
+  .project-links {
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 20px;
+  }
+
+  .project-links a {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 600px) {
+  .project-header {
+    font-size: 42px;
+  }
+
+  .project-desc {
+    font-size: 14px;
+  }
+
+  .project-title {
+    font-size: 22px;
+  }
+
+  .project-links a {
+    font-size: 13px;
+  }
+}

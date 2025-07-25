@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import "../styles.scss"
 import { Bebas_Neue, Manrope } from "next/font/google";
-
+import { Toaster } from "react-hot-toast";
 const bebasNeue = Bebas_Neue({
   variable: "--font-bebas-neue",
   subsets: ["latin"],
@@ -29,6 +29,7 @@ export default function RootLayout({
         className={`${bebasNeue.variable} ${manRope.variable} antialiased`}
       >
         {children}
+        <Toaster position="top-center" reverseOrder={false} />
       </body>
     </html>
   );
